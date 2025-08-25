@@ -1,0 +1,18 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build Project",             // Name shown in VS Code
+      "type": "shell",                      // Run as a shell command
+      "command": "call D:\\HandmadeHero\\misc\\shell.bat && build",             // Script to run
+      "options": {
+        "cwd": "D:\\HandmadeHero\\code"    // Change working directory
+      },
+      "group": {
+        "kind": "build",                    // Mark it as a build task
+        "isDefault": true                   // Make it the default build task
+      },
+      "problemMatcher": []                  // Optional (no compiler error matching)
+    }
+  ]
+}
